@@ -1,8 +1,8 @@
-package com.pawnprudence.backend.mapper;
+package com.pawnprudence.backend.mappers;
 
-import com.pawnprudence.backend.dto.UserDto;
-import com.pawnprudence.backend.dto.UserResponseDto;
-import com.pawnprudence.backend.model.User;
+import com.pawnprudence.backend.dtos.UserDto;
+import com.pawnprudence.backend.dtos.UserResponseDto;
+import com.pawnprudence.backend.models.User;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;

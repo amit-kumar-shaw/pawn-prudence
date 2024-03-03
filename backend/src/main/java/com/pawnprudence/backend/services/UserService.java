@@ -1,10 +1,10 @@
-package com.pawnprudence.backend.service;
+package com.pawnprudence.backend.services;
 
-import com.pawnprudence.backend.dto.UserDto;
-import com.pawnprudence.backend.dto.UserResponseDto;
-import com.pawnprudence.backend.mapper.UserMapper;
-import com.pawnprudence.backend.model.User;
-import com.pawnprudence.backend.repository.UserRepository;
+import com.pawnprudence.backend.dtos.UserDto;
+import com.pawnprudence.backend.dtos.UserResponseDto;
+import com.pawnprudence.backend.mappers.UserMapper;
+import com.pawnprudence.backend.models.User;
+import com.pawnprudence.backend.repositories.UserRepository;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -27,7 +27,8 @@ public class UserService {
     }
 
     public User findUserByEmail(String email) {
-        return userRepository.findByEmail(email);
+        return userRepository.findByEmail(email)
+                .orElse(null);
     }
 
 }

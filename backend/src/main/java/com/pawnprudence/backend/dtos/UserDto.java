@@ -1,4 +1,4 @@
-package com.pawnprudence.backend.dto;
+package com.pawnprudence.backend.dtos;
 
 public record UserDto(
         String email,

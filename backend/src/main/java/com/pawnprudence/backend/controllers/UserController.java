@@ -1,6 +1,6 @@
-package com.pawnprudence.backend.controller;
+package com.pawnprudence.backend.controllers;
 
-import com.pawnprudence.backend.service.UserService;
+import com.pawnprudence.backend.services.UserService;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
