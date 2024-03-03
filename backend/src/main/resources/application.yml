@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/pawn-prudence
-    username: 
-    password:
+    username: postgres
+    password: aks
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
